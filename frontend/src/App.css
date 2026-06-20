@@ -1,0 +1,123 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  background-image:
+    radial-gradient(at 0% 0%, #1e293b 0px, transparent 50%),
+    radial-gradient(at 100% 100%, #1e1b4b 0px, transparent 50%);
+  color: #68463b;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+  backdrop-filter: blur(12px);
+  color: #f61862;
+}
+
+label {
+  color: #cbd5e1;
+}
+input {
+  background: #0f172a;
+  color: rgb(244, 79, 79);
+  border: 1px solid #334155;
+}
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Forms & Inputs */
+.input-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #34d6ff;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #01122e;
+  border-radius: 4px;
+  outline: none;
+  transition: border 0.3s;
+}
+input:focus {
+  border-color: #3498db;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn-primary {
+  background: #1100ff;
+  color: rgb(55, 223, 245);
+  width: 100%;
+}
+.btn-primary:hover {
+  background: #2980b9;
+}
+.btn-secondary {
+  background: #95a5a6;
+  color: rgb(23, 23, 23);
+}
+.btn-edit {
+  background: #f39c12;
+  color: rgb(4, 4, 4);
+}
+.btn-delete {
+  background: #e74c3c;
+  color: rgb(8, 8, 8);
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* States */
+.error-banner {
+  background: #ef9c59;
+  color: #e74c3c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ffbaba;
+}
+.empty-state {
+  text-align: center;
+  color: #467478;
+  font-style: italic;
+  margin-top: 40px;
+}

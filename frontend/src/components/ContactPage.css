@@ -1,0 +1,117 @@
+/* Container for the whole page */
+.contact-page-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Info Cards (Top Row) */
+.contact-info-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.info-icon {
+  font-size: 24px;
+}
+
+.info-content h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.info-content p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Main Form Card */
+.contact-form-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-card h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Form Layout */
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-row textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: #85b7ff;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #85b7ff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #6a9ced;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-info-section,
+  .form-row {
+    flex-direction: column;
+  }
+}
