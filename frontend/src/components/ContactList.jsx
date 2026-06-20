@@ -16,7 +16,21 @@ function ContactList({ contacts, onEdit, onDelete }) {
             </p>
           </div>
           <div className="card-actions">
-            <button className="btn btn-edit" onClick={() => onEdit(contact)}>
+            <button className="btn btn-edit" onClick={() => onEdit(contact)}
+              <button 
+              onClick={() => onEdit(contact)} 
+              style={{ 
+                backgroundColor: '#d68910', /* Your orange/yellow color */
+                color: 'black', 
+                border: 'none', 
+                padding: '8px 16px', 
+                borderRadius: '4px', 
+                cursor: 'pointer',
+                marginRight: '10px' /* <-- THIS IS THE MAGIC LINE */
+              }}
+            >
+              Edit
+            </button>>
               Edit
             </button>
             <button
