@@ -2,17 +2,26 @@ const express = require("express");
 const router = express.Router();
 const Contact = require("../models/Contact");
 
-// CREATE a new contact
-router.post("/", async (req, res) => {
-  try {
-    const newContact = new Contact(req.body);
-    const savedContact = await newContact.save();
-    res.status(201).json(savedContact);
-  } catch (error) {
-    res
-      .status(400)
-      .json({ message: "Error creating contact", error: error.message });
-  }
+// POST: Create a new contact
+router.post('/', auth, async (req, res) => {
+    try {
+        const { name, email, phone } = req.body;
+
+        // Create the new contact and ATTACH THE USER ID!
+        const newContact = new Contact({
+            name,
+            email,
+            phone,
+            user: req.user.id // <-- THIS IS THE MISSING MAGIC LINE
+        });
+
+        const contact = await newContact.save();
+        res.json(contact);
+
+    } catch (error) {
+        console.error("Save error:", error);
+        res.status(400).json({ message: "Error creating contact", error: error.message });
+    }
 });
 
 // READ all contacts
