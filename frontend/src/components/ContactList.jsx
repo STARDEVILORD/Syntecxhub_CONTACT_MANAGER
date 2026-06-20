@@ -30,8 +30,6 @@ function ContactList({ contacts, onEdit, onDelete }) {
               }}
             >
               Edit
-            </button>>
-              Edit
             </button>
             <button
               className="btn btn-delete"
