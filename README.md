@@ -54,7 +54,7 @@ Syntecxhub_Contact_Manager/
 
 ⚙️ Setup
 
-git clone https://github.com/SahilUkarde/Syntecxhub_Contact_Manager.git
+git clone https:https://github.com/STARDEVILORD/Syntecxhub_CONTACT_MANAGER.git
 cd Syntecxhub_Contact_Manager
 
 # 1. Setup the Backend
